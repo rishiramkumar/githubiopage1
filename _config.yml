@@ -1,0 +1,45 @@
+# Site settings
+title: INFO-B581 Final Project
+tagline: ETL Pipeline using OpenEMR FHIR, Hermes SNOMED, and Primary Care FHIR Server
+description: >-
+  A comprehensive ETL pipeline implementation that extracts clinical data from OpenEMR FHIR,
+  transforms it using SNOMED CT terminology, and loads it into a Primary Care FHIR server.
+
+# GitHub Pages settings
+# IMPORTANT: Keep this baseurl as it matches your IU repository path
+url: "https://pages.github.iu.edu"
+baseurl: "/mehtsaam/FA25_B581_Final_Project_OpenEMR_GROUP2"
+
+# Theme configuration
+# Use remote_theme for best compatibility
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Enable relative links (Helps navigation work)
+relative_links:
+  enabled: true
+  collections: true
+
+# Navigation
+show_downloads: false
+
+# Files to Include
+include:
+  - README.md
+  - index.md
+  - etl_pipeline.md
+  - insights.md
+  - team_contrib.md
+  - about.md
+
+# Files to Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .github/
